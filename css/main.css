@@ -55,7 +55,7 @@ hr{
 }
 
 
-.be::before, .em::before, .insta::before {
+.be::before, .em::before, .insta::before, .snap::before {
     display: inline-block;
     position: relative;
     content: "";
@@ -75,6 +75,10 @@ hr{
 
 }
 .insta::before{
+    background-image: url(../img/ico/instagram-solid.svg);
+}
+
+.snap::before{
     background-image: url(../img/ico/instagram-solid.svg);
 }
 
@@ -166,11 +170,15 @@ hr{
 
 
 
+
 /* tag colors */
 
 .green{
     background-color:rgba(100, 125, 50, 1);
+}
 
+.othercolor{
+    background-color:rgba(50, 125, 50, 1);
 }
 
 .tag {
