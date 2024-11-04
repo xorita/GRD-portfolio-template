@@ -2,6 +2,9 @@
 /* Set the desired font from google fonts, or adobe fonts here */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 
 /* GLOBALS */
 body{
