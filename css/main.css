@@ -108,14 +108,14 @@ hr{
     width: 100%;
     margin: 0 auto;
     height: 100vh;
-    background-color: grey;
+/*    background-color: grey;*/
     background-position: center center fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #hero{
-    background-image: url(../img/placeholder.png);
+/*    background-image: url(../img/placeholder.png);*/
 }
 
 #hero > ul {
@@ -163,6 +163,26 @@ hr{
     left:50px;
 }
 
+ /* Container to hold the video and any overlay content */
+    .video-background {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Styling for the iframe to make it cover the full screen */
+    .video-background iframe {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100vw;  /* Full viewport width */
+      height: 100vh;  /* Full viewport height */
+      transform: translate(-50%, -50%); /* Center the video */
+      z-index: -1; /* Keeps video in the background */
+      pointer-events: none; /* Prevents clicking on the video */
+	  opacity: 15%;
+    }
 
 #project-1 {
     background-image: url(../img/placeholder.png);
