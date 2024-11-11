@@ -167,10 +167,16 @@ hr{
     .video-background {
       position: relative;
       width: 100vw;
+      /* min-width: 1080px; */
       height: 100vh;
       overflow: hidden;
     }
 
+    iframe {
+        aspect-ratio: 16 / 9;
+        /* height: auto; */
+        /* width: 100%; */
+    }
     /* Styling for the iframe to make it cover the full screen */
     .video-background iframe {
       position: absolute;
@@ -181,8 +187,10 @@ hr{
       transform: translate(-50%, -50%); /* Center the video */
       z-index: -1; /* Keeps video in the background */
       pointer-events: none; /* Prevents clicking on the video */
-	  opacity: 15%;
+	  opacity: 35%;
     }
+
+ 
 
 #project-1 {
     background-image: url(../img/placeholder.png);
@@ -207,3 +215,49 @@ hr{
     padding:5px 15px 5px 15px;
     border-radius:25px;
 }
+
+
+
+
+@media (min-width: 360px) {
+    .video-background iframe {
+        width: 500vw;  /* Full viewport width */
+        height: 500vh;  /* Full viewport height */
+      }
+  }
+
+@media (min-width: 375px) {
+    .video-background iframe {
+        width: 500vw;  /* Full viewport width */
+        height: 500vh;  /* Full viewport height */
+      }
+  }
+
+
+@media (min-width: 400px) {
+    .video-background iframe {
+        width: 500vw;  /* Full viewport width */
+        height: 500vh;  /* Full viewport height */
+      }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media (min-width: 768px) {
+
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .video-background iframe {
+        width: 400vw;  /* Full viewport width */
+        height: 200vh;  /* Full viewport height */
+      }
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .video-background iframe {
+        width: 100vw;  /* Full viewport width */
+        height: 100vh;  /* Full viewport height */
+      }
+  }
